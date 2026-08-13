@@ -3,8 +3,8 @@
     "ai-batch-reader@example.com": {
       "updates": [
         {
-          "version": "0.9.18",
-          "update_link": "https://raw.githubusercontent.com/xiaoxiao937/li-yue-zotero/main/dist/li-yue-0.9.18.xpi",
+          "version": "0.9.19",
+          "update_link": "https://raw.githubusercontent.com/xiaoxiao937/li-yue-zotero/main/dist/li-yue-0.9.19.xpi",
           "applications": {
             "zotero": {
               "strict_min_version": "9.0.0",
