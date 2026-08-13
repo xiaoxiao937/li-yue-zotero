@@ -5,6 +5,7 @@
         {
           "version": "1.0.0",
           "update_link": "https://raw.githubusercontent.com/xiaoxiao937/li-yue-zotero/main/dist/li-yue-1.0.0.xpi",
+          "update_hash": "sha256:2241df7344d247c508cf440b85deab4f2d2b71717c2230ddc9efe122945db3c4",
           "applications": {
             "zotero": {
               "strict_min_version": "9.0.0",
