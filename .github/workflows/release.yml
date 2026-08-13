@@ -37,19 +37,19 @@ jobs:
           SHA256: ${{ steps.package.outputs.sha256 }}
         shell: bash
         run: |
-          notes=$(cat <<EOF
-          狸阅 ${VERSION}：免费、非商业的 Zotero 多文献独立 AI 阅读工具。
-
-          - 支持 Zotero 9.0.x
-          - 用户使用自己的 DeepSeek、OpenAI 或兼容 API Key
-          - 每篇文献独立生成对应子笔记
-          - 隐私与安全说明见仓库中的 PRIVACY.md 和 SECURITY.md
-
-          SHA-256: `${SHA256}`
-          EOF
-          )
+          printf -v notes '%s\n\n%s\n%s\n%s\n%s\n\nSHA-256: %s' \
+            "狸阅 ${VERSION}：免费、非商业的 Zotero 多文献独立 AI 阅读工具。" \
+            '- 支持 Zotero 9.0.x' \
+            '- 用户使用自己的 DeepSeek、OpenAI 或兼容 API Key' \
+            '- 每篇文献独立生成对应子笔记' \
+            '- 隐私与安全说明见仓库中的 PRIVACY.md 和 SECURITY.md' \
+            "$SHA256"
           if gh release view "v${VERSION}" >/dev/null 2>&1; then
             gh release upload "v${VERSION}" "$FILE" --clobber
+            gh release edit "v${VERSION}" \
+              --title "狸阅 v${VERSION}" \
+              --notes "$notes" \
+              --latest
           else
             gh release create "v${VERSION}" "$FILE" \
               --title "狸阅 v${VERSION}" \
