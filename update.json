@@ -3,9 +3,9 @@
     "ai-batch-reader@example.com": {
       "updates": [
         {
-          "version": "1.2.0",
-          "update_link": "https://raw.githubusercontent.com/xiaoxiao937/li-yue-zotero/main/dist/li-yue-1.2.0.xpi",
-          "update_hash": "sha256:aa898c3720c0f8860e1d088b61b62fdabf8abe088e113f05ec18fa2bb6b03695",
+          "version": "1.3.0",
+          "update_link": "https://raw.githubusercontent.com/xiaoxiao937/li-yue-zotero/main/dist/li-yue-1.3.0.xpi",
+          "update_hash": "sha256:99c3704de437cd542aa6e7155d4e5811b3b29d7fa7b70a482229dc8e23357b06",
           "applications": {
             "zotero": {
               "strict_min_version": "9.0.0",
