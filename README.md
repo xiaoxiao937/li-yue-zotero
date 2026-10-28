@@ -22,8 +22,8 @@
 
 ## 兼容性
 
-- 狸阅 1.3.0：Zotero 9.0.x
-- 已在 macOS Zotero 9.0.6 中完成开发与实际使用验证。
+- 狸阅 1.3.1：Zotero 9.0.x、10.0.x
+- 已在 macOS Zotero 9.0.6 和 10.0.6 中完成兼容性检查；Zotero 10.0.6 已完成隔离启动验证。
 - Windows 和 Linux 尚需更多社区测试，欢迎通过 Issues 反馈。
 
 ## 安装
